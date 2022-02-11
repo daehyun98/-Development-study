@@ -31,3 +31,6 @@ hello.c -> hello.obj -> hello.exe
 * char는 정수와 문자를 표시할 때 사용
 * short, int, long, long long은 정수, 즉 숫자를 나타낼 때 사용
 * 정수형의 경우 signed(부호 있는 변수), unsigned(부호 없는 변수)로 나뉘어지는데 signed의 경우에는 음수와 양수 둘 다 표현 가능, unsigned의 경우에는 양수만을 표현할 후 있는 대신에 표현 범위가 약 2배 늘어난다 
+
+2022-02-11
+인프런 c강의 보는중 Visual Studio로 코딩중이다 
