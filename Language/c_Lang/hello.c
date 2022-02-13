@@ -2,8 +2,11 @@
 
 int main()
 {
+    float a = 1.3;
+
     printf("Hello World!\n");
     printf("Hello RasIno!!!\n");
-    printf("¾È³çÇÏ¼¼¿ä ¹Ý°©½À´Ï´Ù\n");
+    printf("ï¿½È³ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½ ï¿½Ý°ï¿½ï¿½ï¿½ï¿½Ï´ï¿½\n");
+    printf("%f",a);
     return 0;
 }
