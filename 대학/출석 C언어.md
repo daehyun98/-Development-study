@@ -36,3 +36,37 @@
 
 printf_s() 이렇게 넣어야한다 
 vs코드에서는 보안때문에 printf나 scanf 안됌
+
+
+선택/반복 제어문
+- 
+
+
+### 과제
+
+#include <stdio.h> //  표준입출력에 관한 함수들이 정의되어 있는 헤더파일을 포함한다
+
+int main(void) //메인함수가 인자값을 받지 않는다,함수의 반환값이 정수형이다
+{
+    int Jumsu;  // 정수형 자료형으로 변수 Jusmsu 선언
+
+    printf("0점에서 100점수 사이의 점수를 입력하세요. \n"); //printf 출력함수, \n 줄바꿈(이스케이프 시퀀스) 
+    scanf_s("%d", &Jumsu); //scanf
+
+    if (Jumsu >= 0 && Jumsu < 60)  //&&논리곱
+        printf("%d점은 F학점입니다.\n", Jumsu);
+
+    else if (Jumsu >= 60 && Jumsu < 70)
+        printf("%d점은 D학점입니다.\n", Jumsu);
+
+    else if (Jumsu >= 70 && Jumsu < 80)
+        printf("%d점은 C학점입니다.\n", Jumsu);
+
+    else if (Jumsu >= 80 && Jumsu < 90)
+        printf("%d점은 B학점입니다.\n", Jumsu);
+
+    else if (Jumsu >= 90 && Jumsu <= 100)
+        printf("%d점은 A학점입니다.\n", Jumsu);
+
+    return 0; //반환값으로 0을 반환, 0을 반환하면 함수 종료
+}
