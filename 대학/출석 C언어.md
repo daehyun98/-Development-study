@@ -131,3 +131,31 @@ void main(void)
 		printf("입력값이 100이 넘습니다\n");
 	}
 }
+
+- while로 바꿈
+#include <stdio.h>  //표준입출력에 관한 함수들이 정의되어 있는 헤더파일을 포함한다
+void main(void) //main() 함수가 종료할때 아무 값도 리턴하지 않겠다는 뜻
+{
+	int num = 0; //정수형 자료형으로 변수 num 선언하고 초기화
+	int odd_total_num = 0; //정수형 자료형으로 변수 odd_total_num 선언하고 초기화
+	int even_total_num = 0; //정수형 자료형으로 변수 even_total_num 선언하고 초기화
+	printf("1~100 사이 숫자를 입력 하세요 : \n"); //printf 출력함수
+	scanf_s("%d", &num); //표준 입력(키보드)을 받아 변수 num에 값을 저장
+	if (num <= 100) { //만약 num보다 크고 100미만이거나 같으면
+		while (num != 0) { //반복제어문 scanf_s로 받아, 0이 아니면 계속 반복
+			num >= 1; // num이 1보다 크거나 같으면
+			num--; //num은 하나씩 빼준다
+			if (num % 2 == 1) { //만약에 num이 홀수면
+				odd_total_num = odd_total_num + num; //조건문 출력 total에 num 더함
+			}
+			else if (num % 2 == 0) { //만약에 num이 짝수면
+				even_total_num = even_total_num + num;//조건문 출력 total에 num 더함
+			}
+		}
+		printf("홀수 값의 총 합계 : %d \n", odd_total_num); //출력
+		printf("짝수 값의 총 합계 : %d \n", even_total_num);//출력
+	}
+	else { //입력값이 100이 넘으면 출력
+ 		printf("입력값이 100이 넘습니다\n");
+	}
+}
